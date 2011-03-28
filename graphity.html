@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Graphity
+		</title>
+		<script type="text/javascript" src="raphael-min.js">
+</script>
+		<script type="text/javascript" src="jquery.js">
+</script>
+		<script type="text/javascript" src="graphity.js">
+</script>
+		<style type="text/css">
+		#under { width: 400px; height: 40px; text-align: right; font-size: 0.7em; display: block; vertical-align:text-top;}
+		</style>
+	</head>
+	<body onload="init();">
+		<div id="msgspot" style="width: 400px; height: 40px;"></div>
+		<p>
+			<br>
+		</p>
+		<div id="bo">
+			<div id="plane" style="float: left; width: 400px; height: 400px;"></div>
+			<div id="right-side" style="float: left; width: 400px; height: 400px; padding: 10px">
+				<button type="button" id="clearbtn">Clear Graph</button><br>
+				<br/>
+				<form name="blah" id="blah">
+					<div id="toolpicker" align="left">
+						<br>
+						<label for="point"><input type="radio" name="toolgroup" value="point"> Point</label><br/>
+						<label for="line"><input type="radio" name="toolgroup" value="line"> Line</label><br/>
+						<label for="circle"><input type="radio" name="toolgroup" value="circle"> Circle</label><br/>
+						<label for="parabola"><input type="radio" name="toolgroup" value="parabola"> Parabola</label><br/>
+						<label for="sqrt"><input type="radio" name="toolgroup" value="sqrt"> Square Root</label><br/>
+						<label for="absval"><input type="radio" name="toolgroup" value="absval"> Absolute Value</label><br/>
+						<label for="cubic"><input type="radio" name="toolgroup" value="cubic"> Cubic</label><br/>
+						<label for="cuberoot"><input type="radio" name="toolgroup" value="cuberoot"> Cube Root</label><br/>
+
+					</div>
+				</form>
+			</div>
+		</div>
+		<p>
+			<br>
+		</p>
+		<div id="under"></div>
+		<p>
+			<br>
+		</p>
+		<div id="bottom" width="400" height="40"></div>
+		<p>
+			<br>
+		</p>
+	</body>
+</html>
